@@ -1,0 +1,23 @@
+# Master changelog. Append new includes at the end; never reorder or edit applied changesets.
+databaseChangeLog:
+  # Schema: no context, runs in every environment.
+  - include:
+      file: changes/001-create-merchants.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/002-create-transactions.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/003-create-clicks.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/004-create-todo-items.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/005-create-merchant-api-keys.sql
+      relativeToChangelogFile: true
+
+  # Demo data: context @dev, runs only when the "dev" context is passed explicitly.
+  - include:
+      file: demo/100-demo-seed.sql
+      relativeToChangelogFile: true
