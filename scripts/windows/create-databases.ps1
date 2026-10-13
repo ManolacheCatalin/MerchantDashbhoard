@@ -3,9 +3,9 @@
 # Liquibase creates the schema when the app or the tests start.
 #
 # Usage (from the project root):
-#   .\scripts\create-databases.ps1
-#   .\scripts\create-databases.ps1 -Username postgres -Port 5432
-#   .\scripts\create-databases.ps1 -Databases awin            # only one of them
+#   .\scripts\windows\create-databases.ps1
+#   .\scripts\windows\create-databases.ps1 -Username postgres -Port 5432
+#   .\scripts\windows\create-databases.ps1 -Databases awin            # only one of them
 #
 # Password: taken from $env:PGPASSWORD if set; otherwise you are prompted (input is not echoed).
 

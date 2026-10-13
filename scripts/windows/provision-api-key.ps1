@@ -10,8 +10,8 @@
 # Run after the app has started at least once (Liquibase must have created the tables and demo merchants).
 #
 # Usage (from the project root):
-#   $apiKey = .\scripts\provision-api-key.ps1 -MerchantId 1     # keep the key in $apiKey for requests
-#   .\scripts\provision-api-key.ps1 -MerchantId 2               # just print it
+#   $apiKey = .\scripts\windows\provision-api-key.ps1 -MerchantId 1     # keep the key in $apiKey for requests
+#   .\scripts\windows\provision-api-key.ps1 -MerchantId 2               # just print it
 #
 # Password: taken from $env:PGPASSWORD if set; otherwise you are prompted (input is not echoed).
 

@@ -2,8 +2,8 @@
 # as environment variables for the CURRENT PowerShell session only. Nothing is written to disk.
 #
 # Usage (note the leading dot, so the variables stay in your session):
-#   . .\scripts\set-db-env.ps1
-#   . .\scripts\set-db-env.ps1 -Username other_user -TestUsername other_user
+#   . .\scripts\windows\set-db-env.ps1
+#   . .\scripts\windows\set-db-env.ps1 -Username other_user -TestUsername other_user
 #
 # Then run from the same session, e.g.:
 #   .\gradlew.bat bootRun --args='--spring.profiles.active=dev'
@@ -15,7 +15,7 @@ param(
 )
 
 if ($MyInvocation.InvocationName -ne '.') {
-    Write-Warning "Run this script dot-sourced ('. .\scripts\set-db-env.ps1'); otherwise the variables are lost when it exits."
+    Write-Warning "Run this script dot-sourced ('. .\scripts\windows\set-db-env.ps1'); otherwise the variables are lost when it exits."
 }
 
 function Read-Secret([string]$Prompt) {
